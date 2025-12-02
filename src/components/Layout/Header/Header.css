@@ -1,0 +1,8 @@
+nav {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  background: red;
+  color: black;
+}

@@ -1,11 +1,11 @@
-import "./App.css";
-import CheckPb from "./components/CheckPb.jsx";
+import Header from "./components/Layout/Header/Header.jsx";
+import AppRouter from "./routes/AppRouter.jsx";
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
-      <CheckPb></CheckPb>
+      <Header />
+      <AppRouter />
     </>
   );
 }

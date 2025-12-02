@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CheckPb = () => {
+const BtnMode = () => {
   const [activeCheck, setActiveCheck] = useState(false);
 
   useEffect(() => {
@@ -21,4 +21,4 @@ const CheckPb = () => {
   );
 };
 
-export default CheckPb;
+export default BtnMode;
