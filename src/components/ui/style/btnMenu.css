@@ -1,0 +1,41 @@
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1em;
+  width: 1em;
+  height: 3em;
+  z-index: 3;
+  background: transparent;
+  border: none;
+}
+button span {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 50%;
+  background-color: var(--auxDay2);
+}
+button span::after,
+button span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--auxDay2);
+}
+button span::after {
+  top: 1em;
+}
+button span::before {
+  top: -1em;
+}
+
+@media screen and (min-width: 1024px) {
+  button {
+    display: none;
+  }
+}

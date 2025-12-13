@@ -1,3 +1,3 @@
 export default function Service() {
-  return <>Servicios</>;
+  return <section>Servicios</section>;
 }

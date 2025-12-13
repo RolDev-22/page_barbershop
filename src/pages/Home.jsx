@@ -1,3 +1,5 @@
+import "./style/styleHome.css";
+
 export default function Home() {
-  return <>Inicio</>;
+  return <section className="sectionHome">Inicio</section>;
 }

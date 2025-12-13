@@ -1,3 +1,3 @@
 export default function Contact() {
-  return <>Contacto</>;
+  return <section>Contacto</section>;
 }

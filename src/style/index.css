@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Rubik+Vinyl&display=swap");
+
+:root {
+  /*fONTS*/
+  --font-1: "Montserrat", sans-serif;
+  --font-2: "Oi", serif;
+  --font-3: "Bungee Hairline", sans-serif;
+  --font-4: "Rubik Vinyl", system-ui;
+
+  /**STYLE MODE DAY**/
+  --bgDay: #f8e9c3;
+  --auxDay1: #27548a;
+  --auxDay2: #dda853;
+  --colorDay: #183b4e;
+
+  --mainColor: #fff;
+
+  /**STYLE MODE NIGTH**/
+  --bgDark: #0b212d;
+  --auxDark1: #c87941;
+  --auxDark2: #87431d;
+  --colorDark: #dbcbbd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-1);
+  font-weight: 300;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--mainBg);
+  color: var(--colorDay);
+  font-size: 2em;
+}
+
+body nav ul li a {
+  font-size: 0.7em;
+}
+
+body.dark {
+  background-color: var(--bgDark);
+  color: var(--colorDark);
+}
+
+body.dark nav ul li a {
+  color: var(--colorDark);
+}
+
+section {
+  min-height: 100dvh;
+  min-width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  body.dark header nav ul li:hover a {
+    color: var(--mainColor);
+  }
+}

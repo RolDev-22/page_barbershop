@@ -1,15 +1,18 @@
-import "./Header.css";
+import "./header.css";
 import { Link } from "react-router-dom";
 import BtnMode from "../../ui/btnMode";
+import BtnMenu from "../../ui/BtnMenu";
 
 const Header = () => {
   return (
-    <>
-      <div className="logo"></div>
-      <nav>
+    <header>
+      <figure>
+        <img src="/logoBarber.png" alt="" />
+      </figure>
+      <nav id="navMenu">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
             <Link to="/about">Sobre Nosotros</Link>
@@ -23,7 +26,8 @@ const Header = () => {
         </ul>
         <BtnMode />
       </nav>
-    </>
+      <BtnMenu />
+    </header>
   );
 };
 

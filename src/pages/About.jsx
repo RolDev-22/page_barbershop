@@ -1,3 +1,3 @@
 export default function About() {
-  return <>Sobre nosotros</>;
+  return <section>Sobre nosotros</section>;
 }
